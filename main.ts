@@ -42,6 +42,7 @@ basic.forever(function () {
         Time = 250
     }
     if (Alien.isTouchingEdge()) {
+        music.play(music.builtinPlayableSoundEffect(soundExpression.sad), music.PlaybackMode.InBackground)
         game.gameOver()
     }
 })
